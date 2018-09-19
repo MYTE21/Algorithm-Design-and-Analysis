@@ -12,7 +12,7 @@ int prize[Max];
 
 int KnapSack(int bagcapacity,int point)
 {
-    if(bagcapacity==0||point<1) return 0;
+    if(bagcapacity==0||point<0) return 0;
 
     if(dp[bagcapacity][point]!=-1) return dp[bagcapacity][point];
 
